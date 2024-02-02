@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(216, 211, 202);
+        }
+        header{
+            width: 100%;
+            background-color: rgba(24, 13, 1, 0.146);
+            /* position: fixed;
+            top: 0; */
+            padding: 45px;
+            text-align: center;
+            cursor: default;
+        }
+        .month{
+            margin-top: 60px;
+            background-color: rgba(211, 149, 55, 0.105);
+            cursor: default;
+        }
+        .month h1{
+            background-color:rgba(24, 13, 1, 0.146) ;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        li{
+            text-align: center;
+            padding: 7px;
+            margin-top: 10px;
+        }
+     .day{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        list-style-type: none;
+     }
+     .date{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        list-style-type: none;
+     }
+     .calender{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: space-evenly;
+        margin-right: 20px;
+     }
+     .off{
+        color: red;
+     }
+     li{
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+     }
+     .onn{
+        color: grey;
+     }
+     li:hover{
+        /* border: 1px solid blue; */
+        cursor: pointer;
+        background-color: blueviolet;
+        color: white;
+        box-shadow: 2px 2px 5px gray;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calender 2024</h1>
+    </header>
+    <main>
+       <div class="calender">
+<div class="month">
+    <h1>January</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">31</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li class="off">5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li class="off">12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li class="off">19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li class="off">26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    <li class="onn">10</li>
+</ui>
+</div>
+
+<div class="month">
+    <h1>February</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">28</li>
+    <li class="onn">29</li>
+    <li class="onn">30</li>
+    <li class="onn">31</li>
+    <li>1</li>
+    <li class="off">2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li class="off">9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li class="off">16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li class="off">23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    
+</ui>
+</div>
+<div class="month">
+    <h1>March</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li  class="onn">25</li>
+    <li  class="onn">26</li>
+    <li  class="onn">27</li>
+    <li  class="onn">28</li>
+    <li  class="onn">29</li>
+    <li class="off">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li class="off">8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li class="off">15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li class="off">22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li> 
+    <li>28</li> 
+    <li class="off">29</li> 
+    <li>30</li> 
+    <li>31</li>
+    <li  class="onn">1</li>
+    <li  class="onn">2</li>
+    <li  class="onn">3</li>
+    <li  class="onn">4</li>
+    <li  class="onn">5</li>
+    <li  class="onn">6</li>
+</ui>
+</div>
+<div class="month">
+    <h1>April</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">31</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li class="off">5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li class="off">12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li class="off">19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li class="off">26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    <li class="onn">10</li>
+    <li class="onn">11</li>
+
+</ui>
+</div>
+<div class="month">
+    <h1>May</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">28</li>
+    <li class="onn">29</li>
+    <li class="onn">30</li>
+    <li>1</li>
+    <li>2</li>
+    <li class="off">3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li class="off">10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li class="off">17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li class="off">24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li class="off">31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+</ui>
+</div>
+<div class="month">
+    <h1>June</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">26</li>
+    <li class="onn">27</li>
+    <li class="onn">28</li>
+    <li class="onn">29</li>
+    <li class="onn">30</li>
+    <li class="onn">31</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li class="off">7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li class="off">14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li class="off">21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li class="off">28</li>
+    <li>29</li>
+    <li>30</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+</ui>
+</div>
+<div class="month">
+    <h1>July</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">30</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li class="off">5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li class="off">12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li class="off">19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li class="off">26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    <li class="onn">10</li>
+</ui>
+</div>
+<div class="month">
+    <h1>August</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li>1</li>
+    <li class="off">2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li class="off">9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li class="off">16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li class="off">23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li class="off">30</li>
+    <li>31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+</ui>
+</div>
+<div class="month">
+    <h1>September</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li class="off">6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li class="off">13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li class="off">20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li class="off">27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    <li class="onn">10</li>
+    <li class="onn">11</li>
+    <li class="onn">12</li>
+</ui>
+</div>
+<div class="month">
+    <h1>October</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li class="off">4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li class="off">11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li class="off">18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li class="off">25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+</ui>
+</div>
+<div class="month">
+    <h1>November</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="off">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li class="off">8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li class="off">15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li class="off">22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li class="off">29</li>
+    <li>30</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+</ui>
+</div>
+<div class="month">
+    <h1>December</h1>
+   <ui class="day">
+    <li>Sun</li>
+    <li>Mon</li>
+    <li>Tue</li>
+    <li>Wed</li>
+    <li>Thu</li>
+    <li class="off">Fri</li>
+    <li>Sat</li>
+   </ui>
+<ui class="date">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li class="off">6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li class="off">13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li class="off">20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li class="off">27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+    <li class="onn">1</li>
+    <li class="onn">2</li>
+    <li class="onn">3</li>
+    <li class="onn">4</li>
+    <li class="onn">5</li>
+    <li class="onn">6</li>
+    <li class="onn">7</li>
+    <li class="onn">8</li>
+    <li class="onn">9</li>
+    <li class="onn">10</li>
+    <li class="onn">11</li>
+</ui>
+</div>
+
+</div>
+
+</div>
+
+
+                </div>
+    </main>
+</body>
+</html>
